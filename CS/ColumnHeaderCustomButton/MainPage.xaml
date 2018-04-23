@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="ColumnHeaderCustomButton.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400"
+             xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid">
+
+    <Grid x:Name="LayoutRoot" Background="White">
+        <dxg:GridControl Name="grid" AutoPopulateColumns="True">
+            <dxg:GridControl.View>
+                <dxg:TableView>
+                    <dxg:TableView.ColumnHeaderCustomizationAreaTemplate>
+                        <DataTemplate>
+                            <Button Tag="custom" Click="Button_Click" >
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Grid Background="Transparent">
+                                            <Path Name="path" Stretch="Fill" Fill="#FF0000FF" 
+                                              Data="F1 M 1410.67,764.811L 1408.32,767.495C 1407.59,768.323 1406.36, 768.364 1405.59,767.586L 1405.41,767.414C 1404.64,766.636 1404.68, 765.407 1405.51,764.683L 1408.19,762.334C 1407.67,762.122 1407.1, 762 1406.5,762C 1404.01,762 1402,764.015 1402,766.5C 1402, 767.145 1402.14,767.755 1402.38,768.309L 1397.64,772.525C 1396.82, 773.257 1396.78,774.491 1397.56,775.269L 1397.73,775.44C 1398.51, 776.218 1399.74,776.182 1400.47,775.359L 1404.69,770.616C 1405.25, 770.86 1405.86,771.001 1406.5,771.001C 1408.98,771.001 1411, 768.985 1411,766.5C 1411,765.902 1410.88,765.333 1410.67,764.811 Z " 
+                                              Width="14" Height="14" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                        </DataTemplate>
+                    </dxg:TableView.ColumnHeaderCustomizationAreaTemplate>
+                </dxg:TableView>
+            </dxg:GridControl.View>
+        </dxg:GridControl>
+    </Grid>
+</UserControl>
