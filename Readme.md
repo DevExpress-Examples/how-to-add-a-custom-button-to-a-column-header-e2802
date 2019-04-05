@@ -2,7 +2,7 @@
 *Files to look at*:
 
 * [MainPage.xaml](./CS/ColumnHeaderCustomButton/MainPage.xaml) (VB: [MainPage.xaml](./VB/ColumnHeaderCustomButton/MainPage.xaml))
-* [MainPage.xaml.cs](./CS/ColumnHeaderCustomButton/MainPage.xaml.cs) (VB: [MainPage.xaml](./VB/ColumnHeaderCustomButton/MainPage.xaml))
+* [MainPage.xaml.cs](./CS/ColumnHeaderCustomButton/MainPage.xaml.cs) (VB: [MainPage.xaml.vb](./VB/ColumnHeaderCustomButton/MainPage.xaml.vb))
 * [Products.cs](./CS/ColumnHeaderCustomButton/Products.cs) (VB: [Products.vb](./VB/ColumnHeaderCustomButton/Products.vb))
 <!-- default file list end -->
 # How to add a custom button to a column header
